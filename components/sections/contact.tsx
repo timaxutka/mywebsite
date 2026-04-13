@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Download } from 'lucide-react'
 
 const contactLinks = [
   {
@@ -54,11 +54,17 @@ export function ContactSection() {
               ))}
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full">
                 <a href="mailto:elevenfive1@gmail.com">
                   Написать мне
                   <ArrowUpRight className="size-4 ml-2" />
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full">
+                <a href="/resume.pdf" download="Timofeev_Maxim_Resume.pdf">
+                  <Download className="size-4 mr-2" />
+                  Скачать резюме
                 </a>
               </Button>
             </div>

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 
 export function HeroSection() {
   return (
@@ -29,6 +29,12 @@ export function HeroSection() {
             <Button asChild variant="outline" size="lg" className="rounded-full">
               <a href="#contact">
                 Связаться
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="rounded-full">
+              <a href="/resume.pdf" download="Timofeev_Maxim_Resume.pdf">
+                <Download className="size-4 mr-2" />
+                Скачать резюме
               </a>
             </Button>
           </div>
