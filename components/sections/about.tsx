@@ -17,17 +17,18 @@ export function AboutSection() {
                 alt="Максим Тимофеев — UX/UI Дизайнер"
                 fill
                 className="object-cover"
+                style={{ lineHeight: '1.5' }}
                 sizes="(max-width: 768px) 100vw, 280px"
                 priority
               />
             </div>
           </div>
           
-          <div className="md:col-span-8 md:pt-10">
+          <div className="md:col-span-8 md:pt-10" style={{ paddingTop: '68px' }}>
             <p className="text-xl md:text-2xl leading-relaxed text-foreground/90">
               Продуктовый дизайнер с опытом более 3 лет в создании веб-приложений, MVP и цифровых продуктов. Работаю по полному циклу — от UX-исследований и пользовательских сценариев до UI-дизайна и передачи в разработку.
             </p>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed" style={{ marginTop: '34px' }}>
               Мой подход основан на понимании реальных проблем пользователей и трансляции бизнес-требований в интуитивные интерфейсы. Сильные стороны — построение логичных пользовательских путей, информационная архитектура и масштабируемые дизайн-системы.
             </p>
           </div>
