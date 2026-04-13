@@ -123,7 +123,7 @@ function ProjectCard({ project, isExpanded, onToggle }: {
           <div className="pb-8 space-y-8">
             {/* Project Preview */}
             {project.image.startsWith('/') ? (
-              <div className="aspect-video rounded-lg overflow-hidden bg-muted">
+              <div className="aspect-4/3 rounded-lg overflow-hidden bg-muted">
                 <img 
                   src={project.image} 
                   alt={project.title}
@@ -131,7 +131,7 @@ function ProjectCard({ project, isExpanded, onToggle }: {
                 />
               </div>
             ) : (
-              <div className={cn("aspect-video rounded-lg", project.image)} />
+              <div className={cn("aspect-4/3 rounded-lg", project.image)} />
             )}
 
             {/* Tags */}
