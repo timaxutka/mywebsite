@@ -37,7 +37,7 @@ const projects: Project[] = [
     ],
     solution: 'Внедрил канбан-представление воронки с карточками быстрых действий, упростил создание сделки с 6 до 3 шагов, добавил контекстные уведомления об обновлениях.',
     outcome: 'По результатам опросов — создание сделки ускорилось на 40%. Оценка удовлетворённости выросла с 3.2 до 4.5 из 5.',
-    image: 'bg-gradient-to-br from-secondary to-muted'
+    image: '/images/saas.png'
   },
   {
     id: 'finova',
@@ -79,10 +79,10 @@ const projects: Project[] = [
   }
 ]
 
-function ProjectCard({ project, isExpanded, onToggle }: { 
+function ProjectCard({ project, isExpanded, onToggle }: {
   project: Project
   isExpanded: boolean
-  onToggle: () => void 
+  onToggle: () => void
 }) {
   return (
     <article className="border-b border-border">
@@ -104,7 +104,7 @@ function ProjectCard({ project, isExpanded, onToggle }: {
           </p>
         </div>
         <div className="flex items-center gap-2 mt-1 md:mt-0">
-          <ChevronDown 
+          <ChevronDown
             className={cn(
               "size-5 text-muted-foreground transition-transform duration-300",
               isExpanded && "rotate-180"
@@ -122,7 +122,17 @@ function ProjectCard({ project, isExpanded, onToggle }: {
         <div className="overflow-hidden">
           <div className="pb-8 space-y-8">
             {/* Project Preview */}
-            <div className={cn("aspect-video rounded-lg", project.image)} />
+            {project.image.startsWith('/') ? (
+              <div className="aspect-video rounded-lg overflow-hidden bg-muted">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <div className={cn("aspect-video rounded-lg", project.image)} />
+            )}
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2">
