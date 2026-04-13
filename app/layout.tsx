@@ -10,7 +10,7 @@ const inter = Inter({
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Алекс Морган — UX/UI Дизайнер',
+  title: 'Максим Тимофеев — UX/UI Дизайнер',
   description: 'Middle UX/UI дизайнер, специализирующийся на веб-сервисах, MVP-продуктах и пользовательских интерфейсах с фокусом на юзабилити и бизнес-цели.',
   generator: 'v0.app',
   icons: {

@@ -9,7 +9,7 @@ export function HeroSection() {
           <p className="text-muted-foreground mb-4">Добрый день</p>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight text-balance mb-6">
-            Алекс Морган
+            Максим Евгеньевич <span className="text-foreground/50">Тимофеев</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-2">

@@ -4,13 +4,13 @@ import { ArrowUpRight } from 'lucide-react'
 const contactLinks = [
   {
     label: 'Email',
-    value: 'hello@alexmorgan.design',
-    href: 'mailto:hello@alexmorgan.design'
+    value: 'elevenfive1@gmail.com',
+    href: 'mailto:elevenfive1@gmail.com'
   },
   {
     label: 'Telegram',
-    value: '@alexmorgan_ux',
-    href: 'https://t.me/alexmorgan_ux'
+    value: '@timaxutka',
+    href: 'https://t.me/timaxutka'
   }
 ]
 
@@ -56,7 +56,7 @@ export function ContactSection() {
 
             <div className="mt-12">
               <Button asChild size="lg" className="rounded-full">
-                <a href="mailto:hello@alexmorgan.design">
+                <a href="mailto:elevenfive1@gmail.com">
                   Написать мне
                   <ArrowUpRight className="size-4 ml-2" />
                 </a>
